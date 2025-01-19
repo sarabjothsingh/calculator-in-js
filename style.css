@@ -1,4 +1,4 @@
-
+/* General styles for the body */
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -6,10 +6,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f9;
+    background-color: #B0C4DE; /* Grayish Blue background */
 }
 
-
+/* Container for the calculator */
 .calculator {
     background: #333;
     border-radius: 15px;
@@ -19,7 +19,7 @@ body {
     color: white;
 }
 
-
+/* Display area where results are shown */
 #result {
     width: 100%;
     height: 50px;
@@ -33,14 +33,14 @@ body {
     margin-bottom: 20px;
 }
 
-
+/* Button grid container */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 
-
+/* Button styles */
 .btn {
     font-size: 1.5rem;
     padding: 20px;
@@ -49,35 +49,19 @@ body {
     border-radius: 10px;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-
-.btn:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
-
-
+/* Special operator buttons */
 .btn.operator {
     background-color: #FF8C00;
 }
 
-.btn.operator:hover {
-    background-color: #e07b00;
-}
-
-
+/* Clear button */
 #clear {
     background-color: #D32F2F;
 }
 
-#clear:hover {
-    background-color: #c1272d;
-}
-
-
+/* Button for zero or equals */
 #zero, #equals {
     grid-column: span 2;
 }
-
