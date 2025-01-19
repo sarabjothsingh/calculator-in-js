@@ -35,4 +35,9 @@ buttons.forEach((button) => {
 });
 
 // Add event listener to the clear button
-
+clearButton.addEventListener("click", () => {
+    currentInput = "";
+    previousInput = "";
+    operator = null;
+    result.value = "";
+});
